@@ -1,0 +1,11 @@
+# Java
+bin/
+build/
+out/
+
+# Logs
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
