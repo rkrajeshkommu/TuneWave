@@ -1,1 +1,318 @@
-@charset "UTF-8";
+.hero::before {
+	content: "";
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	background:rgba(139,92,246,.15);
+	border-radius:50%;
+	filter: blur(120px);
+	opacity: .15;
+	top: -150px;
+	right: -150px;
+}
+
+.hero {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-content {
+	animation: fadeUp 1s ease;
+}
+
+.hero-badge{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.new-badge{
+    padding:8px 18px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#EC4899,#8B5CF6);
+    color:white;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    box-shadow:0 8px 25px rgba(236,72,153,.35);
+}
+
+.hero-tag {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 22px;
+	border-radius: 30px;
+	background: rgba(255, 255, 255, .06);
+	border: 1px solid rgba(255, 255, 255, .08);
+	color: white;
+	font-weight: 500;
+}
+
+.hero h1 {
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1.1;
+	margin-bottom: 25px;
+}
+
+.hero h1 span {
+	color: #8B5CF6;
+}
+
+.hero p {
+	color: #CBD5E1;
+	font-size: 18px;
+	line-height: 1.8;
+	margin-bottom: 35px;
+	max-width: 520px;
+}
+
+.hero-buttons .btn {
+	padding: 14px 34px;
+	border-radius: 35px;
+	margin-right: 15px;
+}
+
+.btn-primary-custom {
+	background: linear-gradient(135deg, #8B5CF6, #EC4899);
+	color: #fff;
+	border: none;
+	transition: .35s;
+	box-shadow: 0 10px 25px rgba(139, 92, 246, .35);
+}
+
+.btn-primary-custom:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 18px 35px rgba(236, 72, 153, .45);
+	color: #fff;
+}
+
+.btn-outline-custom {
+	border: 2px solid #8B5CF6;
+	color: #fff;
+	transition: .35s;
+}
+
+.btn-outline-custom:hover {
+	background: #8B5CF6;
+	color: #fff;
+	transform: translateY(-5px);
+	box-shadow: 0 15px 30px rgba(139, 92, 246, .35);
+}
+
+@keyframes fadeUp {
+	from { 
+		opacity:0;
+		transform: translateY(50px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* ==========================  Hero Right  ========================== */
+.hero-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 600px;
+	position: relative;
+}
+
+/* ==========================  Vinyl Wrapper  ========================== */
+.vinyl-wrapper {
+	position: relative;
+}
+
+/* ==========================  Vinyl Record  ========================== */
+.vinyl{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: 
+    	repeating-radial-gradient (
+   			circle,
+   			#111 0px,
+   			#111 7px,
+	        #1a1a1a 8px,
+	        #000 10px
+    	);
+    animation: spin 12s linear infinite;
+    position: relative;
+    box-shadow: 0 0 40px rgba(139,92,246,.45),
+        		0 0 100px rgba(236,72,153,.20),
+        		0 0 140px rgba(99,102,241,.15);
+}
+
+.vinyl::before {
+	content: "";
+	position: absolute;
+	width: 120px;
+	height: 260px;
+	background: rgba(255, 255, 255, .05);
+	border-radius: 50%;
+	left: 40px;
+	top: 35px;
+	transform: rotate(-25deg);
+}
+
+.vinyl::after {
+	content: "";
+	position: absolute;
+	inset: 42px;
+	border-radius: 50%;
+	border: 2px solid rgba(255, 255, 255, .08);
+}
+
+.vinyl-wrapper::after {
+	content: "";
+	position: absolute;
+	width: 260px;
+	height: 40px;
+	background: rgba(0, 0, 0, .45);
+	filter: blur(25px);
+	border-radius: 50%;
+	left: 40px;
+	bottom: -30px;
+}
+
+.vinyl:hover {
+	animation-play-state: paused;
+	transform: scale(1.03);
+}
+
+
+/* ==========================  Floating Notes  ========================== */
+@keyframes spin{
+    from {
+        transform:rotate(0deg);
+    }
+
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes float{
+    0%,100% {
+        transform:translateY(0);
+    }
+
+    50% {
+        transform:translateY(-15px);
+    }
+}
+
+.vinyl-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: 700;
+	font-size: 22px;
+}
+
+.vinyl-center img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+/* ==========================  Floating Notes  ========================== */
+.note {
+	position: absolute;
+	color: #EC4899;
+	font-size: 28px;
+	animation: float 3s ease-in-out infinite;
+}
+
+.note1 {
+	top: 50px;
+	left: 40px;
+	font-size:40px;
+}
+
+.note2 {
+	font-size:24px;
+	top: 250px;
+	right: 20px;
+	animation-delay: 1s;
+}
+
+.note3 {
+	font-size:32px;
+	bottom: 40px;
+	left: 120px;
+	animation-delay: 2s;
+}
+
+@keyframes float{
+    0%,100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* ========================== Now Playing Card  ========================== */
+.player-card {
+	width: 280px;
+	padding: 20px;
+	margin-top: 30px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, .08);
+	backdrop-filter: blur(18px);
+	-webkit-backdrop-filter: blur(18px);
+	border: 1px solid rgba(255, 255, 255, .15);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .30);
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	right: -20px;
+	bottom: 30px;
+	z-index: 10;
+}
+
+.song-info {
+	display: flex;
+	align-items: center;
+}
+
+.album-cover {
+	width: 70px;
+	height: 70px;
+	border-radius: 15px;
+	object-fit: cover;
+	margin-right: 15px;
+}
+
+.progress {
+	height: 5px;
+	border-radius: 20px;
+	background: #333;
+}
+
+.progress-bar {
+	width: 65%;
+	background: linear-gradient(90deg, #8B5CF6, #EC4899);
+}
+
+.controls {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 18px;
+	font-size: 22px;
+}
+
+.play {
+	font-size: 40px;
+	color: #EC4899;
+}
