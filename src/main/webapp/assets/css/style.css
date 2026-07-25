@@ -1,1 +1,57 @@
-@charset "UTF-8";
+/* ================================ TuneWave Design System ================================ */
+:root {
+	/* Primary Colors */
+	--primary: #8B5CF6;
+	--primary-dark: #6D28D9;
+	/* Accent */
+	--accent: #EC4899;
+	/* Background */
+	--dark: #0F172A;
+	--dark-light: #1E293B;
+	/* Text */
+	--white: #FFFFFF;
+	--gray: #CBD5E1;
+	--light-gray: #94A3B8;
+	/* Success */
+	--success: #22C55E;
+	/* Border */
+	--border: rgba(255, 255, 255, .08);
+	/* Shadow */
+	--shadow: 0 10px 30px rgba(0, 0, 0, .35);
+	/* Gradient */
+	--gradient: linear-gradient(135deg, #8B5CF6, #EC4899);
+	/* Border Radius */
+	--radius: 14px;
+	/* Transition */
+	--transition: all .35s ease;
+}
+
+/* ================================ Global Reset ================================ */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: var(--dark);
+	color: var(--white);
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
