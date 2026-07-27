@@ -1,0 +1,71 @@
+/* ========================== WHY CHOOSE TUNEWAVE ========================== */
+.why-section {
+	background: #0f172a;
+	padding: 90px 0;
+}
+
+.section-subtitle {
+	color: #8b5cf6;
+	letter-spacing: 4px;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.section-title {
+	color: #fff;
+	font-size: 52px;
+	font-weight: 700;
+}
+
+.section-desc {
+	color: #a1a1aa;
+	max-width: 700px;
+	margin: auto;
+	font-size: 18px;
+}
+
+.feature-card {
+	background: rgba(255, 255, 255, .06);
+	backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, .08);
+	border-radius: 25px;
+	padding: 45px 25px;
+	transition: .45s;
+	height: 100%;
+}
+
+.feature-card:hover {
+	transform: translateY(-12px);
+	box-shadow: 0 0 40px rgba(139, 92, 246, .35);
+	border-color: #8b5cf6;
+}
+
+.feature-icon {
+	width: 90px;
+	height: 90px;
+	margin: auto;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #8b5cf6, #ec4899);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
+	color: white;
+	margin-bottom: 25px;
+	transition: .4s;
+}
+
+.feature-card:hover .feature-icon {
+	transform: rotate(360deg) scale(1.1);
+}
+
+.feature-card h4 {
+	color: white;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.feature-card p {
+	color: #b8bfd0;
+	line-height: 28px;
+}
