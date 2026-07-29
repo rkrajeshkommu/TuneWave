@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>TuneWave - Feel the Music</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -17,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" >
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -26,6 +28,9 @@
     <link rel="stylesheet" href="assets/css/trending.css">
     <link rel="stylesheet" href="assets/css/artists.css">
     <link rel="stylesheet" href="assets/css/features.css">
+    <link rel="stylesheet" href="assets/css/albums.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 
 </head>
 
@@ -47,7 +52,7 @@
 	
 	        <div class="row">
 	            <div class="col-lg-3 col-md-6 mb-4">
-	                <div class="feature-card text-center">
+	                <div class="feature-card text-center" data-aos="flip-left">
 	                    <div class="feature-icon">
 	                        <i class="fas fa-headphones"></i>
 	                    </div>
@@ -57,7 +62,7 @@
 	            </div>
 	
 	            <div class="col-lg-3 col-md-6 mb-4">
-	                <div class="feature-card text-center">
+	                <div class="feature-card text-center" data-aos="flip-left">
 	                    <div class="feature-icon">
 	                        <i class="fas fa-mobile-alt"></i>
 	                    </div>
@@ -67,7 +72,7 @@
 	            </div>
 	
 	            <div class="col-lg-3 col-md-6 mb-4">
-	                <div class="feature-card text-center">
+	                <div class="feature-card text-center" data-aos="flip-left">
 	                    <div class="feature-icon">
 	                        <i class="fas fa-heart"></i>
 	                    </div>
@@ -77,7 +82,7 @@
 	            </div>
 	
 	            <div class="col-lg-3 col-md-6 mb-4">
-	                <div class="feature-card text-center">
+	                <div class="feature-card text-center" data-aos="flip-left">
 	                    <div class="feature-icon">
 	                        <i class="fas fa-bolt"></i>
 	                    </div>
@@ -88,9 +93,34 @@
 	        </div>
 	    </div>
 	</section>
+	
+	<%@ include file="components/albums.jsp" %>
+	<%@ include file="components/contact.jsp" %>
+	<%@ include file="components/footer.jsp" %>
+	
     
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+	<!-- Bootstrap Bundle (includes Popper.js) -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!-- JS -->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	
+	<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+	<script>
+		AOS.init({
+		    duration: 800,
+		    once: true,
+		    offset: 120
+		});
+	</script>
+	
+	<a href="#hero" class="back-top">
+    	<i class="fas fa-arrow-up"></i>
+	</a>
 
 </body>
 

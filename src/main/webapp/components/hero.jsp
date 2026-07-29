@@ -1,10 +1,10 @@
-<section class="hero">
+<section id="hero" class="hero">
 	<div class="container">
 		<div class="row align-items-center">
 		
 			<!-- Left Content -->
 			<div class="col-lg-6">
-				<div class="hero-content">
+				<div class="hero-content" data-aos="fade-right">
 					<div class="hero-badge">
 					    <span class="new-badge"> 
 					    	<i class="fas fa-fire"></i> NEW 
@@ -28,7 +28,7 @@
 			
 			<!-- Right Content -->
 			<div class="col-lg-6">
-			    <div class="hero-right">
+			    <div class="hero-right" data-aos="fade-left">
 			        <div class="vinyl-wrapper">
 			            <div class="vinyl">
 			                <div class="vinyl-center">

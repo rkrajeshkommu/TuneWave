@@ -1,8 +1,8 @@
-<section class="trending-section py-5">
+<section id="trending" class="trending-section py-5">
     <div class="container">
         <div class="section-header text-center mb-5">
             <span class="section-subtitle">Discover Music</span>
-            <h2 class="section-title"> Trending Songs </h2>
+            <h2 class="section-title" data-aos="fade-up"> Trending Songs </h2>
             <p>  Explore the most popular tracks loved by millions of listeners. </p>
         </div>
 
@@ -10,7 +10,7 @@
 
             <!-- Song Card 1 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="song-card">
+                <div class="song-card" data-aos="zoom-in">
                     <div class="song-image">
                         <img src="assets/images/albums/album1.jpg" class="img-fluid">
                         <div class="song-overlay">
@@ -34,7 +34,7 @@
             
             <!-- Song Card 2 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="song-card">
+                <div class="song-card" data-aos="zoom-in">
                     <div class="song-image">
                         <img src="assets/images/albums/album2.jpg" class="img-fluid">
                         <div class="song-overlay">
@@ -58,7 +58,7 @@
             
             <!-- Song Card 3 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="song-card">
+                <div class="song-card" data-aos="zoom-in">
                     <div class="song-image">
                         <img src="assets/images/albums/album3.jpg" class="img-fluid">
                         <div class="song-overlay">
@@ -82,7 +82,7 @@
             
             <!-- Song Card 4 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="song-card">
+                <div class="song-card" data-aos="zoom-in">
                     <div class="song-image">
                         <img src="assets/images/albums/album4.jpg" class="img-fluid">
                         <div class="song-overlay">

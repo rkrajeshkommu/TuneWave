@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.albums-section {
+	padding: 100px 0;
+}
+
+.album-card {
+	background: #1E293B;
+	border-radius: 22px;
+	overflow: hidden;
+	transition: .45s;
+	cursor: pointer;
+	border: 1px solid rgba(255, 255, 255, .05);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, .25);
+}
+
+.album-card:hover {
+	transform: translateY(-12px);
+	border-color: #8B5CF6;
+	box-shadow: 0 25px 55px rgba(139, 92, 246, .35);
+}
+
+.album-image {
+	position: relative;
+	overflow: hidden;
+}
+
+.album-image img {
+	width: 100%;
+	transition: .45s;
+}
+
+.album-card:hover img {
+	transform: scale(1.08);
+}
+
+.album-overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, .45);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: .4s;
+}
+
+.album-card:hover .album-overlay {
+	opacity: 1;
+}
+
+.play-btn {
+	width: 65px;
+	height: 65px;
+	border: none;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #8B5CF6, #EC4899);
+	color: white;
+	font-size: 22px;
+	transition: .4s;
+}
+
+.play-btn:hover {
+	transform: scale(1.1);
+}
+
+.album-content {
+	padding: 22px;
+}
+
+.album-content h5 {
+	color: white;
+	font-weight: 700;
+}
+
+.album-content p {
+	color: #CBD5E1;
+}
+
+.album-info {
+	display: flex;
+	justify-content: space-between;
+	margin: 18px 0;
+}
+
+.genre {
+	background: linear-gradient(135deg, #8B5CF6, #EC4899);
+	padding: 4px 12px;
+	border-radius: 20px;
+	color: white;
+	font-size: 13px;
+}
+
+.album-footer {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+.album-footer i {
+	cursor: pointer;
+	transition: .3s;
+}
+
+.album-footer i:hover {
+	color: #EC4899;
+}
+
+.album-footer i:hover {
+	transform: rotate(360deg) scale(1.1);
+}
+.btn-gradient {
+	background: linear-gradient(135deg, #8B5CF6, #EC4899);
+	color: white;
+	padding: 14px 38px;
+	border-radius: 30px;
+	transition: .4s;
+	text-align: center;
+}
+
+.btn-gradient:hover {
+	color: white;
+	transform: translateY(-3px);
+	box-shadow: 0 10px 25px rgba(139, 92, 246, .35);
+}
+
+@media ( max-width :991px) {
+	.album-card {
+		margin-bottom: 25px;
+	}
+}

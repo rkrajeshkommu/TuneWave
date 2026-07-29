@@ -1,4 +1,4 @@
-<section class="artists-section py-5">
+<section id="artists" class="artists-section py-5">
     <div class="container">
 
         <!-- Section Heading -->
@@ -12,7 +12,7 @@
 
             <!-- Artist 1 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="artist-card">
+                <div class="artist-card" data-aos="fade-up">
                     <div class="artist-image">
                         <img src="assets/images/artists/artist1.jpg" class="img-fluid" alt="Nova Pulse">
                     </div>
@@ -27,7 +27,7 @@
 
             <!-- Artist 2 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="artist-card">
+                <div class="artist-card" data-aos="fade-up">
                     <div class="artist-image">
                         <img src="assets/images/artists/artist2.jpg" class="img-fluid" alt="Luna Echo">
                     </div>
@@ -42,7 +42,7 @@
 
             <!-- Artist 3 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="artist-card">
+                <div class="artist-card" data-aos="fade-up">
                     <div class="artist-image">
                         <img src="assets/images/artists/artist3.jpg" class="img-fluid" alt="EchoVerse">
                     </div>
@@ -57,7 +57,7 @@
 
             <!-- Artist 4 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="artist-card">
+                <div class="artist-card" data-aos="fade-up">
                     <div class="artist-image">
                         <img src="assets/images/artists/artist4.jpg" class="img-fluid" alt="Solar Drift">
                     </div>

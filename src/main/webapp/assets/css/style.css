@@ -55,3 +55,52 @@ ul {
 img {
 	max-width: 100%;
 }
+
+.album-card, .artist-card, .feature-card {
+	transition: .35s ease;
+}
+
+.album-card:hover, .artist-card:hover, .feature-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 20px 45px rgba(0, 0, 0, .35);
+}
+
+.btn {
+	transition: .3s;
+}
+
+.btn:hover {
+	transform: translateY(-3px);
+}
+
+.social-icon {
+	transition: .3s;
+}
+
+.social-icon:hover {
+	transform: rotate(360deg);
+}
+
+.back-top {
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #8B5CF6, #EC4899);
+	color: white;
+	font-size: 18px;
+	z-index: 999;
+	box-shadow: 0 10px 30px rgba(236, 72, 153, .4);
+	transition: .3s;
+}
+
+.back-top:hover {
+	transform: translateY(-5px);
+	color: white;
+	text-decoration: none;
+}
