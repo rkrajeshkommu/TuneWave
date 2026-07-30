@@ -7,6 +7,19 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%
+	String success = (String) session.getAttribute("success");
 
+	if (success != null) {
+	%>
+
+	<div class="alert alert-success">
+		<%=success%>
+	</div>
+
+	<%
+	session.removeAttribute("success");
+	}
+	%>
 </body>
 </html>
