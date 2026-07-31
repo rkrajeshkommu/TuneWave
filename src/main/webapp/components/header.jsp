@@ -1,3 +1,8 @@
+<%@ page import="model.User"%>
+
+<%
+User user = (User) session.getAttribute("user");
+%>
 <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
     <div class="container">
 
@@ -36,10 +41,30 @@
                 </li>
             </ul>
 
-            <div class="nav-buttons">
-                <a href="pages/login.jsp" class="btn btn-login">Login</a>
-                <a href="pages/register.jsp" class="btn btn-register">Register</a>
-            </div>
-        </div>
+			<div class="nav-buttons">
+
+				<%
+				if(user == null) {
+				%>
+
+				<a href="${pageContext.request.contextPath}/pages/login.jsp" class="btn btn-login"> Login </a> 
+				<a href="${pageContext.request.contextPath}/pages/register.jsp" class="btn btn-register"> Register </a>
+
+				<%
+				} else {
+				%>
+
+				<span class="text-white mr-3"> 
+					<a class="btn btn-login"><i class="fas fa-user-circle"></i>
+					<%= user.getFirstname() %></a>	
+				</span> 
+				<a href="${pageContext.request.contextPath}/LogoutController" class="btn btn-register"> Logout </a>
+
+				<%
+				}
+				%>
+
+			</div>
+		</div>
     </div>
 </nav>

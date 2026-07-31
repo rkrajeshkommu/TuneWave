@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/* ==========================  Global  ========================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(135deg, #0F172A, #1E293B, #312E81);
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+/* ==========================  Registration Page  ========================== */
+.register-page {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 15px;
+}
+
+/* ==========================  Glass Card  ========================== */
+.register-card {
+	background: rgba(255, 255, 255, .08);
+	backdrop-filter: blur(18px);
+	-webkit-backdrop-filter: blur(18px);
+	border: 1px solid rgba(255, 255, 255, .12);
+	border-radius: 25px;
+	padding: 45px;
+	box-shadow: 0 15px 45px rgba(0, 0, 0, .35);
+	transition: .4s;
+}
+
+.register-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 20px 55px rgba(139, 92, 246, .35);
+}
+
+/* ==========================  Logo  ========================== */
+.logo {
+	font-size: 38px;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+}
+
+.logo:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.logo span {
+	background: linear-gradient(135deg, #8B5CF6, #EC4899);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.logo i {
+	color: #EC4899;
+	margin-right: 8px;
+}
+
+/* ==========================  Heading  ========================== */
+.register-card h2 {
+	color: white;
+	font-weight: 700;
+	margin-top: 25px;
+}
+
+.register-card p {
+	color: #cbd5e1;
+}
+
+/* ========================== Alert  ========================== */
+.alert {
+	border-radius: 12px;
+}
+
+/* ==========================  Form  ========================== */
+label {
+	color: white;
+	font-weight: 500;
+}
+
+.input-group-text {
+	background: #8B5CF6;
+	border: none;
+	color: white;
+}
+
+.form-control {
+	height: 50px;
+	border: none;
+	background: rgba(255, 255, 255, .08);
+	color: white;
+}
+
+.form-control::placeholder {
+	color: #cbd5e1;
+}
+
+.form-control:focus {
+	background: rgba(255, 255, 255, .12);
+	color: white;
+	border-color: #8B5CF6;
+	box-shadow: 0 0 12px rgba(139, 92, 246, .45);
+}
+
+/* Register Button */
+.register-btn {
+	margin-top: 20px;
+	padding: 14px;
+	border: none;
+	border-radius: 30px;
+	font-weight: 600;
+	color: white;
+	background: linear-gradient(135deg, #8B5CF6, #EC4899);
+	transition: .3s;
+}
+
+.register-btn:hover {
+	transform: translateY(-3px);
+	color: white;
+	box-shadow: 0 10px 25px rgba(236, 72, 153, .35);
+}
+
+/* Login Link */
+.login-link {
+	color: #EC4899;
+	font-weight: 600;
+}
+
+.login-link:hover {
+	color: #8B5CF6;
+	text-decoration: none;
+}
