@@ -1,0 +1,1 @@
+<footer class="admin-footer"> © 2026 TuneWave Admin Panel </footer>
