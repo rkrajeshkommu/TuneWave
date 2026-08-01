@@ -1,5 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java"%>
+<%@ page import="model.User" %>
 
+<%
+	User user = (User) session.getAttribute("user");
+
+	if (user == null || !"ADMIN".equalsIgnoreCase(user.getRole())) {
+		response.sendRedirect(request.getContextPath() + "/pages/login.jsp");
+		return;
+	}
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +36,7 @@
 
 		<div class="main-content">
 
-			<%@ include file="components/header.jsp"%>
+			<jsp:include page="components/header.jsp" />
 
 			
 			<div class="container-fluid mt-4">

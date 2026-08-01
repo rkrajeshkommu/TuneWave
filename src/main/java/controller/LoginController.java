@@ -38,9 +38,9 @@ public class LoginController extends HttpServlet {
 
 			// Role Based Login
 			if ("ADMIN".equalsIgnoreCase(user.getRole())) {
-				response.sendRedirect("admin/dashboard.jsp");
+				response.sendRedirect(request.getContextPath() + "/admin/dashboard.jsp");
 			} else {
-				response.sendRedirect("index.jsp");
+				response.sendRedirect(request.getContextPath() + "/index.jsp");
 			}
 
 		} else {
