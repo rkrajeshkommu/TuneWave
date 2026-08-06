@@ -1,7 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"
-	language="java"%>
-<%@ page
-	import="model.User, java.util.List, dao.UserDao, dao.UserDaoInterface"%>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java"%>
+<%@ page import="model.User, java.util.List, dao.UserDao, dao.UserDaoInterface"%>
 
 <%
 User loggedInUser = (User) session.getAttribute("user");

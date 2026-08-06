@@ -9,7 +9,9 @@
 		</li>
 
 		<li>
-			<a href="#"> <i class="fas fa-music"></i> Songs</a>
+			<a href="${pageContext.request.contextPath}/admin/songs.jsp">
+				<i class="fas fa-music"></i> Songs
+			</a>
 		</li>
 
 		<li>
